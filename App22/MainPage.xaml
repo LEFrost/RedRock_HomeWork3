@@ -14,8 +14,9 @@
                 <GradientStop Color="#FF048CFD" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <StackPanel Height="50" VerticalAlignment="Top" Margin="0,40" Orientation="Vertical">
-            <Button Name="MyButton" Content="开始抽奖" Foreground="Red" Background="Yellow" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10" Click="MyButton_Click"/>
+        <StackPanel Height="50" VerticalAlignment="Top" Margin="0,40" Orientation="Horizontal">
+            <Button x:Name="MyButton" Content="开始抽奖" Foreground="Red" Background="Yellow" HorizontalAlignment="Left"  VerticalAlignment="Center"  Click="MyButton_Click"/>
+            <Button x:Name="MyStop" Content="停止抽奖" Foreground="Green" Background="Red" HorizontalAlignment="Right" VerticalAlignment="Center"  Click="MyStop_Click"/>
             <!--<Button Name="clear" Content="清空结果" VerticalAlignment="Center" Margin="20,0"/>-->
         </StackPanel>
         <StackPanel Height="45" VerticalAlignment="Top" Margin="0,90">

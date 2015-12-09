@@ -41,16 +41,17 @@ namespace App22
 
         private void MyButton_Click(object sender, RoutedEventArgs e)
         {
+            dt.Start();
             TextBlock textblock = new TextBlock();
-            
             textblock.Text = TB.Text;
             textblock.HorizontalAlignment = HorizontalAlignment.Left;
-            
             stp.Children.Add(textblock);
-            
 
         }
 
-       
+        private void MyStop_Click(object sender, RoutedEventArgs e)
+        {
+            dt.Stop();
+        }
     }
 }
